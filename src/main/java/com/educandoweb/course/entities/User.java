@@ -27,7 +27,7 @@ public class User implements Serializable{
 	private String name;
 	private String email;
 	private String phone;
-	private String passwork;
+	private String password;
 	
 	
 	@JsonIgnore
@@ -38,13 +38,13 @@ public class User implements Serializable{
 	public User() {
 	}
 
-	public User(Long id, String name, String email, String phone, String passwork) {
+	public User(Long id, String name, String email, String phone, String password) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
 		this.phone = phone;
-		this.passwork = passwork;
+		this.password = password;
 	}
 	
 	public List<Order> getOrders() {
@@ -83,12 +83,12 @@ public class User implements Serializable{
 		this.phone = phone;
 	}
 
-	public String getPasswork() {
-		return passwork;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setPasswork(String passwork) {
-		this.passwork = passwork;
+	public void setPasswork(String password) {
+		this.password = password;
 	}
 
 	@Override
